@@ -1,0 +1,6 @@
+com/collegemanagement/rest/dto/CollegeResponse.class
+com/collegemanagement/rest/services/CollegeService.class
+com/collegemanagement/rest/controller/CollegeController.class
+com/collegemanagement/rest/model/College.class
+com/collegemanagement/rest/dao/CollegeDataImpl.class
+com/collegemanagement/rest/dao/CollegeDao.class
