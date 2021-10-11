@@ -1,4 +1,4 @@
-package com.collegemanagement.rest.dto;
+package com.collegemanagement.rest.model;
 
 public class CollegeResponse {
 	

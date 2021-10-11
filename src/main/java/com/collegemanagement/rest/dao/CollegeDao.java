@@ -2,13 +2,15 @@ package com.collegemanagement.rest.dao;
 
 import java.util.List;
 
-import com.collegemanagement.rest.model.College;
+import com.collegemanagement.rest.entity.CollegeEntity;
  
 
 public interface CollegeDao {
 	
-	public String addCollege(College college);
-	public List<College> getCollegeList();
-	public College getCollegeById(int id);
+	public String addCollege(CollegeEntity college);
+	public List<CollegeEntity> getCollegeList();
+	public CollegeEntity getCollegeById(int id);
+	public void addDept(CollegeEntity college);
+	
 
 }

@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.collegemanagement.rest.dao.CollegeDao;
-import com.collegemanagement.rest.model.College;
+import com.collegemanagement.rest.entity.CollegeEntity;
 
 @Service
 @Transactional
@@ -17,16 +17,20 @@ public class CollegeService {
 	@Autowired
 	private CollegeDao collegeDao;
 	
-	public String addCollege(College college) {
+	public String addCollege(CollegeEntity college) {
 		return collegeDao.addCollege(college);
 	}
 	
-	public List<College> getCollegeList(){
+	public List<CollegeEntity> getCollegeList(){
 		return collegeDao.getCollegeList();
 	}
 	
-	public College collegeById(int id) {
+	public CollegeEntity collegeById(int id) {
 		return collegeDao.getCollegeById(id);
+	}
+	
+	public void addDept(CollegeEntity college) {
+		collegeDao.addDept(college);
 	}
 	
 }

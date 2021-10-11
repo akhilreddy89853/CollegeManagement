@@ -10,7 +10,7 @@
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/test" />
+		<property name="url" value="jdbc:mysql://localhost:3306/college_mgmt_db" />
 		<property name="username" value="root" />
 		<property name="password" value="root@123" />
 	</bean>
@@ -19,8 +19,11 @@
 		<property name="dataSource" ref="dataSource" />
 		<property name="annotatedClasses">
 			<list>
-				<value>com.collegemanagement.rest.model.College</value>
+				<value>com.collegemanagement.rest.entity.CollegeEntity</value>
+				<value>com.collegemanagement.rest.entity.DepartmentEntity</value>
+				<value>com.collegemanagement.rest.entity.FacultyEntity</value>
 			</list>
+			
 		</property>
 		<property name="hibernateProperties">
 			<props>

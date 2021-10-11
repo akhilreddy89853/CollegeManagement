@@ -1,6 +1,11 @@
-/home/local/PDC.EXZATECH.IN/ecas037/Documents/outside/CollegemanagementSystem/src/main/java/com/collegemanagement/rest/dao/CollegeDataImpl.java
-/home/local/PDC.EXZATECH.IN/ecas037/Documents/outside/CollegemanagementSystem/src/main/java/com/collegemanagement/rest/model/College.java
-/home/local/PDC.EXZATECH.IN/ecas037/Documents/outside/CollegemanagementSystem/src/main/java/com/collegemanagement/rest/controller/CollegeController.java
-/home/local/PDC.EXZATECH.IN/ecas037/Documents/outside/CollegemanagementSystem/src/main/java/com/collegemanagement/rest/dto/CollegeResponse.java
-/home/local/PDC.EXZATECH.IN/ecas037/Documents/outside/CollegemanagementSystem/src/main/java/com/collegemanagement/rest/services/CollegeService.java
-/home/local/PDC.EXZATECH.IN/ecas037/Documents/outside/CollegemanagementSystem/src/main/java/com/collegemanagement/rest/dao/CollegeDao.java
+/home/ecas040/College-Management/CollegeManagement/src/main/java/com/collegemanagement/rest/services/DepartmentService.java
+/home/ecas040/College-Management/CollegeManagement/src/main/java/com/collegemanagement/rest/dao/DepartmentDaoImpl.java
+/home/ecas040/College-Management/CollegeManagement/src/main/java/com/collegemanagement/rest/services/CollegeService.java
+/home/ecas040/College-Management/CollegeManagement/src/main/java/com/collegemanagement/rest/entity/DepartmentEntity.java
+/home/ecas040/College-Management/CollegeManagement/src/main/java/com/collegemanagement/rest/entity/FacultyEntity.java
+/home/ecas040/College-Management/CollegeManagement/src/main/java/com/collegemanagement/rest/controller/CollegeController.java
+/home/ecas040/College-Management/CollegeManagement/src/main/java/com/collegemanagement/rest/entity/CollegeEntity.java
+/home/ecas040/College-Management/CollegeManagement/src/main/java/com/collegemanagement/rest/dao/DepartmentDao.java
+/home/ecas040/College-Management/CollegeManagement/src/main/java/com/collegemanagement/rest/model/CollegeResponse.java
+/home/ecas040/College-Management/CollegeManagement/src/main/java/com/collegemanagement/rest/dao/CollegeDataImpl.java
+/home/ecas040/College-Management/CollegeManagement/src/main/java/com/collegemanagement/rest/dao/CollegeDao.java
