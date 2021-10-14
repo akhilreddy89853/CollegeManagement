@@ -1,35 +1,12 @@
-package com.collegemanagement.rest.entity;
+package com.collegemanagement.rest.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+public class DepartmentModel {
 
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-
-@Entity
-@Table(name = "department")
-public class DepartmentEntity {
-
-	@Id
-	@GeneratedValue
 	private Integer deptId;
 	private String departmentName;
 	private String hodName;
-
-	public DepartmentEntity(Integer deptId, String departmentName, String hodName) {
-		super();
-		this.deptId = deptId;
-		this.departmentName = departmentName;
-		this.hodName = hodName;
-	}
 	
-
-	public DepartmentEntity() {
-		super();
-	}
-
-
+	
 
 	public Integer getDeptId() {
 		return deptId;
@@ -38,7 +15,6 @@ public class DepartmentEntity {
 	public void setDeptId(Integer deptId) {
 		this.deptId = deptId;
 	}
-
 
 	public String getDepartmentName() {
 		return departmentName;
@@ -62,4 +38,5 @@ public class DepartmentEntity {
 				+ "]";
 	}
 
+	
 }

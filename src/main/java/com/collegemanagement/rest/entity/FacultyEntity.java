@@ -5,17 +5,32 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @Entity
 @Table(name = "faculty")
 public class FacultyEntity {
 
-	
 	@Id
 	@GeneratedValue
 	private Integer facultyID;
 	private String facultyName;
 	private String subject;
+	private Integer deptId;
+	
+	
+
+	public FacultyEntity() {
+		super();
+	}
+
+	public Integer getDeptId() {
+		return deptId;
+	}
+
+	public void setDeptId(Integer deptId) {
+		this.deptId = deptId;
+	}
 
 	public Integer getFacultyID() {
 		return facultyID;
@@ -46,6 +61,4 @@ public class FacultyEntity {
 		return "FacultyEntity [facultyID=" + facultyID + ", facultyName=" + facultyName + ", subject=" + subject + "]";
 	}
 
-	
-	
 }

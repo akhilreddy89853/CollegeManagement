@@ -13,6 +13,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
+
 @Entity
 @Table(name = "college")
 public class CollegeEntity implements Serializable {
@@ -26,13 +30,15 @@ public class CollegeEntity implements Serializable {
 	private String name;
 	private String location;
 
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(cascade = CascadeType.ALL)
+	@LazyCollection(LazyCollectionOption.FALSE)
 	@JoinColumn(name = "college_id", referencedColumnName = "collegeId")
-	private List<DepartmentEntity> dept=new ArrayList<>();
+	private List<DepartmentEntity> dept = new ArrayList<>();
 
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(cascade = CascadeType.ALL)
+	@LazyCollection(LazyCollectionOption.FALSE)
 	@JoinColumn(name = "college_id", referencedColumnName = "collegeId")
-	private List<FacultyEntity> faculty=new ArrayList<>();
+	private List<FacultyEntity> faculty = new ArrayList<>();
 
 	public Integer getCollegeId() {
 		return collegeId;
@@ -62,6 +68,7 @@ public class CollegeEntity implements Serializable {
 		return dept;
 	}
 
+
 	public void setDept(List<DepartmentEntity> dept) {
 		this.dept = dept;
 	}
@@ -84,9 +91,24 @@ public class CollegeEntity implements Serializable {
 				+ ", faculty=" + faculty + "]";
 	}
 
+	public CollegeEntity(Integer collegeId, String name, String location) {
+		super();
+		this.collegeId = collegeId;
+		this.name = name;
+		this.location = location;
+	}
 
-	
-	
-	
+	public CollegeEntity(Integer collegeId, String name, String location, List<DepartmentEntity> dept,
+			List<FacultyEntity> faculty) {
+		super();
+		this.collegeId = collegeId;
+		this.name = name;
+		this.location = location;
+		this.dept = dept;
+		this.faculty = faculty;
+	}
+
+	public CollegeEntity() {
+	}
 
 }
